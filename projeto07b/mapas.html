@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Google Maps</title>
+    <style>
+        * {
+            margin: 0px;
+            border: 5px;
+            padding: 0px;
+        }
+
+        .espaco {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        iframe {
+            padding: 10px;
+        }
+
+        figure {
+            border-style: groove;
+            text-align: center;
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            text-align: center;
+        }
+        .botao {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="espaco"></div>
+    <h1>LOCALIZAÇÃO</h1>
+    <div class="espaco"></div>
+    <figure>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.5514616485875!2d-43.927841488891154!3d-19.94329768137073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699c801e20f6b%3A0xdf6538c6d4196a74!2sR.%20Cobre%2C%20200%20-%20Cruzeiro%2C%20Belo%20Horizonte%20-%20MG%2C%2030310-190!5e0!3m2!1sen!2sbr!4v1695321714000!5m2!1sen!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </figure>
+
+    <div class="espaco"></div>
+
+    <footer>
+        <button class="botao" name="btn" value="#" title="Fechar..." 
+        onclick="fechar()" type="button">Fechar</button>
+
+        <script>
+            function fechar() {
+                alert("MENSAGEM\n" + "formulário será fechado ...");
+                close();
+            }
+        </script>
+    </footer>
+
+</body>
+
+</html>

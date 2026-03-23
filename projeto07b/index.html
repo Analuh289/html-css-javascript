@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            border: 5px;
+            padding: 0px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        iframe {
+            padding: 10px;
+        }
+
+        figure {
+            border-style: groove;
+            text-align: center;
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        footer {
+            text-align: center;
+            border: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOCALIZAÇÃO</h1>
+    <figure>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.5479795967967!2d-43.927281225252386!3d-19.94344428144801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699c80238a5b1%3A0xdd7cd7bcc1671c98!2sR.%20Cobre%2C%20200%20-%20Cruzeiro%2C%20Belo%20Horizonte%20-%20MG%2C%2030310-190!5e0!3m2!1spt-BR!2sbr!4v1742823966115!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </figure>
+
+    <br>
+
+    <footer>
+        <button class="botao" name="btn" value="#" title="Fechar..." onclick="fechar()" type="button">Fechar</button>
+        <script>
+            function fechar() {
+                alert("MENSAGEM\n" + "formulário será fechado ...");
+                close();
+            }
+        </script>
+    </footer>
+</body>
+
+</html>

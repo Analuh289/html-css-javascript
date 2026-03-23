@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>REGIÃO SUL</title>
+    <style>
+        * {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+
+        h1, 
+        figure {
+            font-family: Arial;
+            color: #fff;
+            text-align: center;
+        }
+
+        body {
+            background-size: cover;
+        }
+
+        /* header {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            text-align: center;
+            padding-bottom: 50px;
+        } */
+
+        .mapa{
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        footer{
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        .separador {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        }
+    </style>
+</head>
+
+<body background="image/projeto07back.jpg">
+    <br>
+    <h1>REGIÃO SUL</h1>
+    <br>
+    <section class="mapa">
+        <figure>
+            <img src="image/projeto07.png" alt="Região Sul" usemap="#mapasul">
+        </figure>
+        <map name="mapasul">
+            <!-- usando retângulo -->
+            <area alt="pr" shape="rect" href="https://pt.wikipedia.org/wiki/Paran%C3%A1" coords="86, 14, 171, 90"
+                title="Informações do Paraná" target="_blank">
+            <!-- usando circulo -->
+            <area alt="rs" shape="circle" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" coords="94, 170, 56"
+                title="Informações sobre o Rio Grande do Sul" target="_blank">
+            <!-- usando poligono -->
+            <area alt="sc" shape="poly" href="https://pt.wikipedia.org/wiki/Santa_Catarina"
+                coords="85, 111, 85, 94, 135, 102, 154, 88, 172, 92, 192, 88, 195, 131, 171, 164, 166, 146, 150, 143, 131, 123"
+                title="Informações sobre Santa Catarina" target="_blank">
+        </map>
+    </section>
+<div class="separador"></div>
+    <footer>
+        <p>Desenvolvido por:</p>
+        <p>BYTA BUG LTDA</p>   
+        <p> 6070-6070</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 10px;
+}
+html {
+    font-family: Arial;
+    text-align: justify;
+}
+
+i {
+    color: blue;
+}
+ b {
+    color: #808080;
+ }
+
+h1, h2 {
+    color: #363636;
+}
+
+#logo {
+    background-color: #808080;
+    text-align: center;
+}
+
+.rodape {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #808080;
+}
+
+.nomeUsuario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #1127a5;
+}
+
+button {
+    border: 3px;
+    border-style: groove;
+    background-color: #4a4444;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}

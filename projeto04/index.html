@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>CSS e JavaScript</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script>
+        var nome = prompt("Informe o nome: ");
+    </script>
+</head>
+
+<body>
+    <figure id="logo">
+        <img src="image/projeto04.png" alt="logo projeto04" title="imagem css js">
+    </figure>
+
+    <h1>JAVASCRIPT - INTRODUÇÃO</h1>
+
+    <p class="nomeUsuario">
+        <script>
+            if (nome == null || nome.trim() == "") {
+                alert("MENSAGEM DO PROGRAMA:\n" + "O nome deve ser informado!");
+                window.location.reload(false);
+            }
+            else {
+                document.write("Usuário: " + nome);
+            }
+        </script>
+    </p>
+
+    <p>É uma linguagem de script para WEB, criada pela Netscape (Brendasn Eich) em 1994/1995. Trata-se de uma linguagem
+        de front-end, usada por bilhões de páginas. A linguagem <i>JavaScript</i> tem por objetivo adicionar
+        funcionalidades às páginas <b>HTML</b>, ela é usada dentro das páginas <b>HTML</b>.</p>
+
+    <h2>UM POUCO DE HISTÓRIA</h2>
+
+    <p>A linguagem <i>JavaScript</i> foi criada por Brendan Eich, um desenvolvedor da Netscape, em 1995. Nos primórdios
+        de sua criação a linguagem teve o nome de Mocha, LiveScript e finalmente foi batizada como <i>JavaScript</i>, o
+        nome foi uma cartada de marketing em função da popularidade da linguagem JAVA. A linguagem <i>JavaScript</i>
+        teve um desenvolvimento rápido, foi introduzida no Netscape Navigator 2.0 (1995) para tornar os sites mais
+        dinâmicos e interativos, permitindo aos desenvolvedores criar scripts executados diretamente no navegador.</p>
+
+    <h2>PRIMEIROS PASSOS</h2>
+
+
+    <p>No início a linguagem <i>JavaScript</i> era focado em tarefas simples, como validação de formulários e interação
+        básica com o DOM (Document Object Model), em 1996, a Microsoft introduziu sua própria versão da linguagem,
+        chamada JScript, para competir com a Netscape. Isso gerou problemas de compatibilidade entre navegadores (Guerra
+        dos Navegadores). Em função desse conflito a Netscape enviou o <i>JavaScript</i> ao ECMA International,
+        resultando na criação da especificação ECMAScript (ES) em 1997.</p>
+
+    <h2>O ECMASCRIPT</h2>
+
+    <p>O ECMAScript é o nome do padrão oficial que define como a linguagem <i>JavaScript</i> deve funcionar. Ele é
+        mantido pela ECMA International, uma organização responsável por padronizar tecnologias de informação e
+        comunicação. O ECMAScript fornece as especificações técnicas que os navegadores e outras implementações seguem
+        para garantir consistência e interoperabilidade no uso do <i>JavaScript</i>. O ECMAScript é o coração técnico do
+        <i>JavaScript</i>, responsável por definir como ele deve funcionar. Graças a ele, a linguagem continua evoluindo
+        e se adaptando às necessidades do desenvolvimento moderno, mantendo sua relevância no mundo da tecnologia.
+    </p>
+
+    <h2>OUTRAS TECNOLOGIAS RELACIONADAS</h2>
+
+    <p>ECMAScript é o padrão que define como o <i>JavaScript</i> deve ser implementado. Entre 1998 e 2005 houve uma
+        estagnação, a linguagem ficou estagnada, enquanto navegadores como Internet Explorer e Netscape dominavam o
+        mercado. As limitações técnicas e a falta de suporte consistente entre navegadores reduziram o entusiasmo
+        inicial. Nessa mesma época o Ajax e Web 2.0 ganham força, Ajax (Asynchronous <i>JavaScript</i> and XML)
+        revolucionou o uso da web, permitindo a criação de aplicações dinâmicas que carregavam dados sem recarregar a
+        página. Ferramentas como o jQuery surgiram para simplificar o uso do <i>JavaScript</i> e resolver problemas de
+        compatibilidade entre navegadores. <i>JavaScript</i> ganhou popularidade com o surgimento de frameworks e
+        bibliotecas avançadas, como Node.js (2009): Tornou possível usar <i>JavaScript</i> no lado do servidor,
+        AngularJS, React e Vue.js: Tornaram o desenvolvimento de interfaces mais estruturado e eficiente. O lançamento
+        de ECMAScript 6 (ES6) em 2015 trouxe grandes melhorias na linguagem.
+    </p>
+
+    <footer class="rodape">
+        Para maiores informação, acesse o site:
+        <a href="https://www.w3schools.com/js/" target="_blank"> Sobre o JavaScript</a>
+        <p>
+            <!-- Cria o botão (recurso html) -->
+            <button title="mensagem" name="button_close" value="ok" type="button" onclick="mensagem()">Sobre a
+                página</button>
+
+            <script>
+                function mensagem() {
+                    const tempo = new Date();
+                    var dados =
+                        "MENSAGEM:\n" +
+                        "Página..: index.html\n" +
+                        "Data..:" + tempo.toLocaleDateString('pt-BR') + "\n" +
+                        "Versão..: 1.0"
+                    alert(dados);
+                    console.log(dados);
+                }
+            </script>
+        </p>
+    </footer>
+</body>
+
+</html>
