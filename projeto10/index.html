@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            border: 0px;
+            padding: 0px;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .info {
+            padding-top: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6rem;
+            text-align: justify;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.2rem;
+        }
+
+        .secao, .rodape {
+            background-color: #d3d3d3;
+            box-shadow: 10px 10px #808080;
+            padding: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.8rem;
+            padding-bottom: 0px;
+        }
+
+        #form {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6rem;
+        }
+
+        .labelcheckbox {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.8rem;
+        }
+
+        .aviso {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.0rem;
+        }
+
+        .separador {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .rodape {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+        }
+
+        input, textarea, select {
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        header {
+            text-align: right;
+            font-size: 1.3rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            transition: all 500ms ease-in-out;
+        }
+
+        a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>
+            <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">Forms</a>
+            <a href="https://www.w3.org/WAI/tutorials/menus/structure/" target="_blank">Menu</a>
+            <a href="pages/mensagem.html" target="_blank">Sobre</a>
+        </p>
+    </header>
+    <section class="secao">
+        <h1>Byta Bug Informática</h1>
+
+        <p class="info">
+            Visando proporcionar o melhor para o desenvolvimento pessoal e profissional de nossos funcionários do setor
+            de <b>TI</b>, A Byta Bug Informática, a maior empresa do setor de TI, tem a alegria de fornecer a seus
+            funcionários
+            cursos de aperfeiçoamento profissional.Preencha os dados a seguir e em seguida confirme o envio. O
+            treinamento será custeado em 80% pela empresa, não perca essa oportunidade. Aguarde, daremos o retorno o
+            mais rápido possível.
+        </p>
+        <form id="form" action="#" method="get">
+            <h2>Dados do aluno</h2>
+            <p>
+                <label for="matricula">Matricula: </label><br>
+                <input type="text" id="matricula" name="matricula" placeholder="Informe a matrícula" size="10"><br>
+            </p>
+
+            <p>
+                <label for="nome">Nome: </label><br>
+                <input type="text" id="nome" name="nome" placeholder="Informe o nome" size="20"><br>
+            </p>
+
+            <p>
+                <label for="fone">Telefone: </label><br>
+                <input type="text" id="fone" name="fone" placeholder="Informe o telefone"><br>
+            </p>
+
+            <p>
+                <label for="email">Email: </label><br>
+                <input type="text" id="email" name="email" placeholder="Informe o email" size="10"><br>
+            </p>
+
+            <p>
+                <label class="labelcheckbox" for="curso">Escolha o curso</label><br>
+                <label class="aviso" for="curso">(máximo 3 cursos)</label><br><br>
+
+                <input type="checkbox" id="uml" name="curso" value="UML">
+                <label for="uml">Treinamento UMl</label><br>
+
+                <input type="checkbox" id="testes" name="curso" value="TESTES">
+                <label for="testes">Treinamento Testes</label><br>
+
+                <input type="checkbox" id="html" name="curso" value="HTML">
+                <label for="html">Treinamento HTML</label><br>
+
+                <input type="checkbox" id="css" name="curso" value="CSS">
+                <label for="css">Treinamento CSS</label><br>
+
+                <input type="checkbox" id="js" name="curso" value="JS">
+                <label for="js">Treinamento JavaScript</label><br>
+
+                <input type="checkbox" id="devops" name="curso" value="DEVOPS">
+                <label for="devops">Treinamento Devops</label><br>
+            </p>
+
+            <p>
+                <label id="local">Escolha o local</label><br><br>
+
+                <select id="local" name="local">
+                    <option value="0">Selecione o local:</option>
+                    <option value="CENTRO">Centro</option>
+                    <option value="FUNCIONARIOS">funcionarios</option>
+                    <option value="STAEFIGENIA">Sta Efigênia</option>
+                    <option value="SAVASSI">Savassi</option>
+                </select>
+            </p>
+
+            <P>
+                <label for="radio">Escolha o Tipo de Pagamento</label><br><br>
+
+                <input type="radio" id="pix" name="tipopg" value="PIX">
+                <label for="pix">PIX</label><br>
+
+                <input type="radio" id="debito" name="tipopg" value="DEBITO">
+                <label for="debito">Débito</label><br>
+
+                <input type="radio" id="debito" name="tipopg" value="DINHEIRO">
+                <label for="dinheiro">Dinheiro/Espécie</label><br>
+
+                <input type="radio" id="debito" name="tipopg" value="CREDITO">
+                <label for="credito">Crédito</label>
+            </P>
+
+            <p>
+                <label for=" ">Informe a sua formação básica</label><br><br>
+                <textarea class="conhecimento" name="conhecimento" id="conhecimento" cols="20" rows="5"
+                    title="Informe seu conhecimento (opcional), máximo 5 linhas"></textarea>
+            </p>
+
+            <p>
+                <label>Confirme ou altere a data do cadastro:</label><br>
+                <input type="date" id="dataCadastro">
+            </p>
+
+            <script>
+                const hoje = new Date();
+                const formatoISO = hoje.toISOString().split('T')[0];
+                document.getElementById('dataCadastro').valua = formato;
+            </script>
+
+            <p>
+                <input type="reset" name="Cancelar&nbsp&nbsp&nbsp" title="Limpar Dados">
+                <input type="submit" name="Confirmar" title="Enviar Dados">
+            </p>
+        </form>
+
+        <div class="separador"></div>
+        
+        <section class="rodape">
+            <footer>
+                <p>
+                    <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" alt="">Mais sobre forms clique aqui</a>
+                </p>
+            </footer>
+        </section>
+    </section>
+
+</body>
+
+</html>

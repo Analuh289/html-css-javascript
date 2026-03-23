@@ -1,0 +1,32 @@
+GABRIELLA CRISTINA MOREIRA DE SOUZA
+
+(1)-D
+(2)-É um único servidor físico que armazena diversos sites
+(3)-E
+(4)-A URI identifica recursos de uma forma geral e a URL localiza recurso na Web
+(5)-D
+(6)-HTML,CSS e JavaScript
+(7)-Java,JavaSript,PHP E C#
+(8)-A capacidade do site de se adaptar à resolução da tela do dispositivo
+(9)-No Mobile-First o site deve ser pensado para telas menores primeiro
+(10)-B
+(11)-A
+(12)-E
+(13)-C
+(14)-Página de Resultado da Ferramenta de Pesquisa 
+(15)-E
+(16)-C
+(17)-B
+(18)-A
+(19)-A
+(20)-D
+(21)-B
+(22)- Para centralizar a imagem deve ser usado o comando:
+	figure {
+            text-align: center;
+        }
+(23)-D
+(24)-D
+(25)-C
+(26)-B
+(27)-C

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Superbom</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="images/Logo_icon-removebg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <figure class="logo">
+            <a href="#inicio"><img src="images/Superbom_Logo-removebg.png" alt="Superbom"></a>
+        </figure>
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Produtos</a>
+            <a href="pages/localizacao.html">Localizacao</a>
+            <a href="pages/minhaLista.html">Lista</a>
+            <a href="pages/formCadastro.html">Cadastro</a>
+            <a href="javascript:void(0);" class="icon" onclick="menuResponsivo()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <div id="inicio" style="padding: 100px;"></div>
+
+    <section>
+        <div class="carrossel">
+            <div class="container" id="img">
+                <img src="images/slidesCarrossel/frangoferreira.png" alt="Frango Ferreira">
+                <img src="images/slidesCarrossel/racaoGoDog.png" alt="Raçao Go Dog">
+                <img src="images/slidesCarrossel/bombom.png" alt="Sonho de Valsa">
+            </div>
+        </div>
+    </section>
+
+    <div style="padding: 10px;"></div>
+
+
+    <section class="seçao-produtos" id="grid-produtos">
+        <div class="grid-produtos" id="produtos-container"></div>
+    </section>
+
+    <footer>
+        <section>
+
+        </section>
+    </footer>
+    <script>
+        const imgs = document.getElementById("img");
+        const img = document.querySelectorAll("#img img");
+        let idx = 0;
+
+        function carrossel() {
+            idx++;
+            if (idx > img.length - 1) {
+                idx = 0;
+            }
+            const width = img[0].clientWidth;
+            imgs.style.transform = `translateX(${-idx * width}px)`;
+        }
+
+        setInterval(carrossel, 7500);
+
+        window.addEventListener("resize", () => {
+            const width = img[0].clientWidth;
+            imgs.style.transform = `translateX(${-idx * width}px)`;
+        });
+    </script>
+
+    <footer>
+        <a href="pages/desenvolvedores.html">Desenvolvido por:</a>
+        <p>Gabriella Cristina Moreira de Souza</p>
+        <p>Ana Luiza Souza Rodrigues</p>
+        <a href="pages/tabelaPrecos.html">>></a>
+    </footer>
+</body>
+</body>
+
+</html>

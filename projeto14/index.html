@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        .formato {
+            background-color: #d5d5d5;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 3px solid #000;
+            border-radius: 20px;
+            /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 2.5); */
+            box-shadow: inset 10px 10px 50px #5f5c5c;
+        }
+        #resultado {
+            color: #9c3912;
+        }
+    </style>
+    <script>
+        function calcular() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            if (a == "" || b == "") {
+                alert("impossível calcular para valores nulos!");
+                return;
+            }
+            if (a <= 0 || b <= 0) {
+                alert("Números não permitidos!");
+                return;
+            }
+
+            let soma = parseInt(a) + parseInt(b);
+            let produto = a * b;
+
+            let resultadoDiv = document.getElementById("resultado");
+            resultadoDiv.innerHTML =`<p><b>Soma: </b>${soma}<br><br><b>Produto: </b>${produto}</p>`
+        }
+
+        function fechar() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <div class="formato">
+        <h2>Soma e mutiplica</h2>
+        <p>
+            <label for="a">Valor A:</label>
+            <input type="number" id="a" placeholder="Digite o Valor para A">
+        </p>
+
+        <p>
+            <label for="b">Valor B:</label>
+            <input type="number" id="b" placeholder="Digite o Valor para B">
+        </p>
+
+        <button onclick="calcular()" title="Calcular a Soma e o Produto">Calcular&nbsp&nbsp</button>
+        <button onclick="fechar()" title="Fechar essa página">Fechar</button>
+
+        <div id="resultado"></div>
+    </div>
+</body>
+</html>

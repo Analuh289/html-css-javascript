@@ -1,0 +1,20 @@
+NOME DO PROJETO:
+    Superbom
+
+LINK DA PUBLICAÇÃO DO PROJETO:
+
+
+PARTICIPANTES E PAPÉIS:
+    Ana Luiza Souza Rodrigues 
+    (Tech Lead - Desenvolvedor Front-End - Designer UX/UI )
+    Gabriella Cristina Moreira de Souza 
+    (Desenvolvedor Front-End - Redator - Designer UX/UI)
+
+OBJETIVO PRINCIPAL DO PROJETO:
+    Apresentar para os clientes promoções, preços e disponibilidade de produtos no estoque do supermercado
+
+DESCRIÇÃO RESUMIDA DO PROJETO:
+    Site de promoções que permite ao cliente verificar o preço e disponibilidade dos produtos e  
+    adicioná-los a uma lista calculando o valor total de sua compra, o cliente pode se cadastrar ou entrar em sua conta na guia cadastro e o vendedor pode adicionar produtos por meio da tabela de preços e 
+
+CONCLUSÃO:

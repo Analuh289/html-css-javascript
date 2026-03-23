@@ -1,0 +1,65 @@
+<!-- Alunos:
+Ana Luiza Souza Rodrigues
+Gabriella Cristina Moreira de Souza-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <title>Região Centro-Oeste</title>
+    <style>
+        * {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+
+        footer,
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: cornflowerblue;
+        }
+
+        .mapa {
+            background-color: skyblue;
+        }
+
+        figure {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>REGIÃO CENTRO-OESTE</p>
+    </header>
+
+    <section class="mapa">
+        <figure>
+            <img src="image/atividade03.png" alt="Mapa Centro-Oeste" usemap="#mapacentrooeste">
+        </figure>
+        <map name="mapacentrooeste">
+            <area alt="Mapa Mato Grosso" shape="circle" href="https://pt.wikipedia.org/wiki/Mato_Grosso"
+                coords="142, 152, 90" title="Informações sobre o Mato Grosso" target="_blank">
+            <area alt="Mapa Mato Grosso do Sul" shape="rect" href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul"
+                coords="97, 282, 218, 353" title="Informações sobre o Mato Grosso do Sul" target="_blank">
+            <area alt="Mapa Goiás" shape="poly" href="https://pt.wikipedia.org/wiki/Goi%C3%A1s"
+                coords="358, 153, 358, 190, 339, 196, 333, 216, 327, 231, 328, 262, 313, 272, 264, 277, 248, 295, 200, 262, 203, 234"
+                title="Informações sobre Goiás" target="_blank">
+        </map>
+    </section>
+
+    <footer>
+        <p>INFORMAÇÕES DA REGIÃO</p>
+        <p>Selecione o estado</p>
+        <p>Copyright(c) Sites e Sites</p>
+    </footer>
+</body>
+
+</html>
